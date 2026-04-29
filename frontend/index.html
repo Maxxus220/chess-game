@@ -2,9 +2,12 @@
 <html>
 	<head>
 		<script type="module" src="https://cdn.jsdelivr.net/gh/starfederation/datastar@v1.0.1/bundles/datastar.js"></script>
+		<link rel="stylesheet" href="/styles.css">
 	</head>
 	<body>
-		<h1>My something numbered header</h1>
+		<div id="chess-board" data-init="@get('api/chess-board')">
+			Loading chess board...
+		</div>
 		<button data-on:click="@get('/endpoint')">
 			Open the pod bay doors, HAL.
 		</button>
