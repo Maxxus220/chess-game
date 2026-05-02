@@ -1,0 +1,20 @@
+#chess-space {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#chess-board {
+	display: grid;
+	grid-template-columns: repeat(8, auto);
+	width: 80vmin;
+	height: 80vmin;
+	border: 1vmin solid;
+	border-radius: 5vmin;
+	overflow: hidden;
+}
+
+.chess-square {
+	aspect-ratio: 1 / 1;
+}
