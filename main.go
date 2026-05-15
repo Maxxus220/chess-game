@@ -31,9 +31,9 @@ var chessboardTmpl = template.Must(template.New("board").Funcs(template.FuncMap{
 		}
 
 		if is_green {
-			return "green"
+			return "#739552"
 		} else {
-			return "grey"
+			return "#ebecd0"
 		}
 	},
 }).Parse(chessboardTmplString))
